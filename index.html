@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Snake Game</h1>
+      <p class="subtitle">Swipe or use arrow keys/WASD. Press Space to pause. Click Restart to play again.</p>
+    </header>
+
+    <section class="game-area">
+      <canvas id="game"></canvas>
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Highscore: <span id="highscore">0</span></div>
+      </div>
+      <div class="controls">
+        <button id="restart">Restart</button>
+        <button id="easy">Easy</button>
+        <button id="medium" class="active">Medium</button>
+        <button id="hard">Hard</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <p>School Project – Developed by <strong>Anjila Budhamagar</strong>, Class 9</p>
+    </section>
+
+    <footer>
+      <small>Created for learning and fun.</small>
+    </footer>
+  </main>
+
+  <script src="snake.js"></script>
+</body>
+</html>
